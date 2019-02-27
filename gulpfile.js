@@ -14,6 +14,7 @@ var path = {
         jsmain: 'dist/js',
         css: 'dist/css/',
         img: 'dist/img/',
+        svg: 'dist/svg/',
         fonts: 'dist/fonts/'
     },
     app: {
@@ -23,6 +24,7 @@ var path = {
         scss: 'app/css/main.scss',
         css: 'app/css/*.css',
         img: 'app/img/**/*.*',
+        svg: 'app/svg/**/*.*',
         fonts: 'app/fonts/**/*.*'
     },
     watch: {
@@ -33,6 +35,7 @@ var path = {
         scss: 'app/css/*.scss',
         css: 'app/css/*.css',
         img: 'app/img/**/*.*',
+        svg: 'app/svg/**/*.*',
         fonts: 'app/fonts/**/*.*'
     },
     clean: './dist/'
@@ -78,13 +81,10 @@ gulp.task('scss:build', function (done) {
     gulp.src(path.app.scss) // получим main.scss
         .pipe(plumber()) // для отслеживания ошибок
         .pipe(sourcemaps.init()) // инициализируем sourcemap
-        .pipe(sass({
-            outputStyle: 'compact'
-        }).on('error', sass.logError)) // scss -> css
-        .pipe(postcss([autoprefixer({browsers: ['last 2 version']})]))
-        // .pipe(autoprefixer(/*{тут был автопрефиксер-лист(галп-автопрефиксер я поменял его на просто автопрефиксер)}*/)) // добавим префиксы
-        .pipe(cleanCSS({
-            level: 2
+        .pipe(sass({outputStyle: 'compact'})
+        .on('error', sass.logError)) // scss -> css
+        .pipe(postcss([autoprefixer({browsers: ['last 2 version']})]))  // .pipe(autoprefixer(/*{тут был автопрефиксер-лист(галп-автопрефиксер я поменял его на просто автопрефиксер)}*/)) // добавим префиксы
+        .pipe(cleanCSS({level: 2
         }, (details) => {
             console.log(`${details.name}: ${details.stats.originalSize}`);
             console.log(`${details.name}: ${details.stats.minifiedSize}`);
@@ -97,7 +97,7 @@ gulp.task('scss:build', function (done) {
 
 gulp.task('css:build', function (done) {
     gulp.src(path.app.css)
-        .pipe(gulp.dest(path.dist.css));// Переносим скрипты в продакшен
+        .pipe(gulp.dest(path.dist.css));// Переносим скрипты в продакшен!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     done();
 });
 
@@ -124,6 +124,13 @@ gulp.task('js:build', function (done) {
 gulp.task('fonts:build', function (done) {
     gulp.src(path.app.fonts)
         .pipe(gulp.dest(path.dist.fonts));
+    done();
+});
+
+// перенос svg elements
+gulp.task('svg:build', function (done) {
+    gulp.src(path.app.svg)
+        .pipe(gulp.dest(path.dist.svg));
     done();
 });
 
@@ -157,7 +164,7 @@ gulp.task('cache:clear', function (done) {
 });
 
 // сборка
-gulp.task('build', gulp.series('clean:build', 'html:build', 'scss:build', 'css:build', 'js:build', 'jsmain:build', 'fonts:build', 'image:build', function (done) {
+gulp.task('build', gulp.series('clean:build', 'html:build', 'scss:build', 'css:build', 'js:build', 'jsmain:build', 'fonts:build', 'image:build','svg:build', function (done) {
     done();
 }));
 
@@ -170,6 +177,7 @@ gulp.task('watch', function () {
     gulp.watch(path.watch.scss,gulp.series('scss:build'));
     gulp.watch(path.watch.js, gulp.series('js:build'));
     gulp.watch(path.watch.img, gulp.series('image:build'));
+    gulp.watch(path.watch.img, gulp.series('svg:build'));
     gulp.watch(path.watch.fonts, gulp.series('fonts:build'));
     gulp.watch(path.watch.jsmain, gulp.series('jsmain:build'));
 });

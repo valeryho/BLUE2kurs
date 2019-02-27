@@ -1,3 +1,24 @@
-@import "fonts";
-@import "style";
-@import "media";
+/*
+* Custom Bootstrap
+*/
+@import "../../node_modules/bootstrap/dist/css/bootstrap-grid.css";
+
+/*
+* Font-awesome
+*/
+@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+
+
+
+@import "_fonts";
+@import "_style";
+@import "_media";
+@import "_colors";
+@import "_elements";
+
+//@import "colors.scss";
+body{
+    background-color:$bg_color_body_index;
+    font-family:$font-black;
+
+}
