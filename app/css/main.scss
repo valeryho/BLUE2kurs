@@ -10,15 +10,12 @@
 
 
 
+@import "_mainelement";
 @import "_fonts";
 @import "_style";
 @import "_media";
 @import "_colors";
 @import "_elements";
+@import "_mixin";
 
-//@import "colors.scss";
-body{
-    background-color:$bg_color_body_index;
-    font-family:$font-black;
 
-}
