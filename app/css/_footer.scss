@@ -1,0 +1,80 @@
+@import "_mixin";
+
+.payments
+{
+    background-color: $bg_color22;
+}
+._payment_systems
+{
+    height: 3rem;
+    width: 50%;
+    display: flex;
+    ._payment_system{
+        margin-right: 1%;
+    }
+    ._psvisa{
+        width: 10%;
+        background: url('/svg/Payment_systems/visa.svg')no-repeat 0 0/70% 100%;
+    }
+    ._psmaster{
+        
+        width: 10%;
+        background: url('/svg/Payment_systems/master_card.svg')no-repeat 0 0/70% 100%;
+    
+    }
+    ._psamexpress{
+    
+        width: 10%;
+        background: url('/svg/Payment_systems/american_express.svg')no-repeat 0 0/70% 100%;
+    }
+    ._psdiscover{
+        width: 10%;
+        background: url('/svg/Payment_systems/discover.svg')no-repeat 0 0/70% 100%;
+    }
+    ._psjcb{
+        width: 10%;
+        background: url('/svg/Payment_systems/jcb.svg')no-repeat 0 0/70% 100%;
+    }
+    ._psdclub{
+        width: 10%;
+        background: url('/svg/Payment_systems/diners-club.svg')no-repeat 0 0/70% 100%;
+    }
+    ._psddebt{
+        width: 10%;
+        background: url('/svg/Payment_systems/paypal.svg')no-repeat 0 0/70% 100%;
+    }
+}
+
+.social_icons
+{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    .social_icon
+    {
+        width: 10%;
+        height: 60%;
+        margin-left: 5%;
+    }
+    .fb{
+        align-self: center;
+        background: url("/svg/Svg/Facebook.svg")no-repeat 0 0/70% 100%;
+        &:hover{
+            background: url("/svg/Svg/Facebook2.svg")no-repeat 0 0/70% 100%;
+        }
+    }
+    .twiter{
+        align-self: center;
+        background: url("/svg/Svg/Twiter.svg")no-repeat 0 0/70% 100%;
+        &:hover{
+            background: url("/svg/Svg/Twiter2.svg")no-repeat 0 0/70% 100%;
+        }
+    }
+    .pinterest{
+        align-self: center;
+        background: url("/svg/Svg/Pinterest.svg")no-repeat 0 0/70% 100%;
+        &:hover{
+            background: url("/svg/Svg/Pinterest2.svg")no-repeat 0 0/70% 100%;
+        }
+    }
+}
