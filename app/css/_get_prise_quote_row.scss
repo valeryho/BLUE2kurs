@@ -1,0 +1,21 @@
+@import "_mixin";
+.get_prise
+{
+    background: $bg_color2;
+}
+
+.spare
+{
+    width: 100%;
+    position: relative;
+    &::before
+    {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        left:1%;
+        top:1%;
+        background: url(/svg/Svg/Arrow.svg)no-repeat 0 0/100% 100%;
+        z-index: 1;
+    }
+}
