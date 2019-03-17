@@ -72,7 +72,7 @@ text-transform: uppercase;
 color:$black;
 font-family: 'Arial Narrow', Arial, sans-serif;
 font-size: 1.12rem;
-text-transform: uppercase;
+// text-transform: uppercase;
 }
 .ballon
 {
@@ -187,4 +187,25 @@ text-transform: uppercase;
         font-size: 1.5rem;
     }
   
+}
+
+
+.btn_read_more
+{
+   background:$bg_color2;
+   color: $white;
+   padding: 4%;
+   width: 50%;
+   text-align: center;
+   margin:4% 0;
+   position: relative;
+   font-family: $font-regular;
+   font-size: 1rem;
+   text-transform: uppercase;
+   &:hover
+   {
+       background:$color1;
+       color: $bg_color1;
+   }
+   
 }
