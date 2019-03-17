@@ -1,0 +1,61 @@
+@import "_mixin";
+@import "_colors";
+
+.why_order_paper{
+    padding: 2% 0;
+background: url(/svg/Svg/Bg2.svg)repeat 0 0/cover,
+    $font-color1;
+}
+.title_text
+{
+margin:2% 0;
+color:$bg_color5_forms;
+font-family: "Arial Narrow";
+font-size: 1.5rem;
+justify-content: center;
+}
+
+.why_order_paper_main{
+display: flex;
+flex-wrap: wrap;
+.why_order_elements
+{
+    display: flex;
+  
+    width: 25%;
+    padding: 1%;
+    flex-direction: column;
+    @include Smaler_then_1200{
+          width: 33.3%
+    }
+    @include Smaler_then_600{
+      width: 100%
+    }
+    .number_in_circle
+    {
+        background: $white;
+        color: $font-color1;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-family: $font-black;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .why_order_asigments
+    {
+       margin-top: 4%;
+        font-size: 22px;
+        color: $white;
+        font-size: 1.2rem;
+        font-family: "Arial Narrow";
+    }
+    .why_order_asigments_row
+    {
+        background: $white;
+        width: 100%;
+        height: 2px;
+        margin-top: 4%;
+    }
+}
+}

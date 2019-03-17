@@ -3,6 +3,11 @@
         @content;
     }
 }
+@mixin Biger_then_600{
+    @media screen and (min-width:601px){
+        @content;
+    }
+}
 @mixin Smaler_then_1200{
     @media screen and (max-width:1200px){
         @content;

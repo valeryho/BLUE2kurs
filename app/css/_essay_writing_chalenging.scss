@@ -1,6 +1,8 @@
 @import "_mixin";
 @import "_colors";
 
+.ess_writing_contents_600
+{display: none;}
 
 .ess_writing
 {
@@ -29,123 +31,322 @@ text-align: justify;
         }
 }
 
+ .ess_writings_elements_text
+            {
+                flex-flow: 1;
+                margin-right: auto;
+                color: $black;
+                font-size: 1rem;
+                padding: 0 5%;
+                font-family: "Arial Narrow";
+                text-align: justify;
+    
+            }
+
 .ess_writings_row
 {
     display: flex;
     flex-wrap: wrap;
+   
     .ess_writings_elements
     {
         width: 25%;
-        text-align: center;
         display: flex;
         flex-direction: column;
+        // justify-content: space-between;
         align-items: center;
-        margin: 4% 0;
-        padding: 1%;
-        justify-content: space-between;
-        @include Smaler_then_1200
-        {
-         width: 50%;
-        }
-        @include Smaler_then_600
-        {
-         width: 100%;
-        }
-
+        text-align: center;
+        margin: 5% 0;
+        position: relative;
+      
+         @include Smaler_then_1200
+            {
+            width: 50%;
+            }
+             @include Smaler_then_600
+            {
+            width: 25%;
+            }
+           
         
-              
-        .ess_writings_elements_text
-        {
-            margin-top: 2%;
-            color: $black;
-            font-size: 1rem;
-            padding: 0 5%;
-            font-family: "Arial Narrow";
-            text-align: justify;
-
+        .ess_writing_contents{
+            margin: 4% 0;
+            padding: 1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            flex-grow: 1;
+            .btn_ess
+            {margin-top: auto;
+            flex-flow: 1;}
+             @include Smaler_then_600
+            {
+            display: none;
+            }
+           
+           
+            
         }
-        .ess_writings_element1
-        {
-            width: 110px;
+         .ess_elements_main
+         {
+             width: 110px;
             height: 110px;
             margin: 10% 0; 
+            @include Smaler_then_600
+                {
+                width: 75px;
+                height: 75px;; 
+                }
+
+         }
+        .ess_writings_element1
+        {
+            
             background: url(/svg/Svg/Element1.svg)no-repeat/cover;
         }
         .ess_writings_element2
         {
-            width: 110px;
-            height: 110px;
-            margin: 10% 0; 
+            
             background: url(/svg/Svg/Element2.svg)no-repeat/cover;
         }
         .ess_writings_element3
         {
-            width: 110px;
-            height: 110px;
-            margin: 10% 0; 
+           
             background: url(/svg/Svg/Element3.svg)no-repeat/cover;
         }
         .ess_writings_element4
         {
-            width: 110px;
-            height: 110px;
-            margin: 10% 0; 
+             
             background: url(/svg/Svg/Element4.svg)no-repeat/cover;
         }
-
+       
         &:hover{
-            box-shadow: 2px 4px 7px rgba(155, 182, 190, 0.55);
-            background-color: $white;
-            text-align: center;
-            position: relative;
-            display: flex;
-            .ess_writings_element1
-        {
-            
-            background: url(/svg/Svg/Element1_dark.svg)no-repeat/cover;
-        }
-        .ess_writings_element2
-        {
-            
-            background: url(/svg/Svg/Element2_dark.svg)no-repeat/cover;
-        }
-        .ess_writings_element3
-        {
-            
-            background: url(/svg/Svg/Element3_dark.svg)no-repeat/cover;
-        }
-        .ess_writings_element4
-        {
-            
-            background: url(/svg/Svg/Element4_dark.svg)no-repeat/cover;
-        }
-            &::before
-                {
-                content: '';
-                display: block;
-                position: absolute;
-                background: transparent;
-                left: 10px;
-                bottom: -12px;
-                box-shadow: 4px 4px 7px #9bb6be;
-                width: 3px;
-                height: 17px;
-                transform: rotate(50deg);
+            @include Biger_then_600{
+
+                box-shadow: 2px 4px 7px rgba(155, 182, 190, 0.55);
+                background-color: $white;
+                position: relative;
+                text-align: center;
+                display: flex;
+                &::before
+                    {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    background: transparent;
+                    left: 10px;
+                    bottom: -12px;
+                    box-shadow: 4px 4px 7px #9bb6be;
+                    width: 3px;
+                    height: 17px;
+                    transform: rotate(50deg);
+                    }
+                &::after
+                    {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: -15px;
+                        left: 0;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 16px 19px 0 0;
+                        border-color: $white transparent transparent transparent;
+                    }
+                
+                    .ess_writings_element1
+                    {            
+                        background: url(/svg/Svg/Element1_dark.svg)no-repeat/cover;
+                    
+                    
+                    }
+                    .ess_writings_element2
+                    {
+                        
+                        background: url(/svg/Svg/Element2_dark.svg)no-repeat/cover;
+                    }
+                    .ess_writings_element3
+                    {
+                        
+                        background: url(/svg/Svg/Element3_dark.svg)no-repeat/cover;
+                    }
+                    .ess_writings_element4
+                    {
+                        
+                        background: url(/svg/Svg/Element4_dark.svg)no-repeat/cover;
+                    }
                 }
-            &::after
+            @include Smaler_then_600
             {
-                content: '';
-                display: block;
-                position: absolute;
-                bottom: -15px;
-                left: 0;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 16px 19px 0 0;
-                border-color: $white transparent transparent transparent;
+                    .ess_writings_element1
+                    {            
+                        background: url(/svg/Svg/Element1_dark.svg)no-repeat/cover;
+                    
+                    
+                    }
+                    .ess_writings_element2
+                    {
+                        
+                        background: url(/svg/Svg/Element2_dark.svg)no-repeat/cover;
+                    }
+                    .ess_writings_element3
+                    {
+                        
+                        background: url(/svg/Svg/Element3_dark.svg)no-repeat/cover;
+                    }
+                    .ess_writings_element4
+                    {
+                        
+                        background: url(/svg/Svg/Element4_dark.svg)no-repeat/cover;
+                    }
+                    .ess_writing_contents
+                    {
+                        box-shadow: 2px 4px 7px rgba(155, 182, 190, 0.55);
+                        background-color: $white;
+                        position: relative;
+                    }
+
+                    .ess_writing_content1
+                    {
+                        display: flex;
+                        width: 400%;
+                        margin-left: 300%;
+                        &::before
+                            {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            background: transparent;
+                            top: -10px;
+                            left: 12%;
+                            box-shadow: 4px 4px 7px  #9bb6be;
+                            width: 3px;
+                            height: 10px;
+                            transform: rotate(-45deg);
+                            }
+                         &::after
+                            {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: -10px;
+                                left: 8%;
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 20px 20px 20px 0px;
+                                border-color: $white transparent transparent transparent;
+                                transform: rotate(45deg);
+                            }
+                       
+                    }
+                    .ess_writing_content2
+                    {
+                        display: flex;
+                        width: 400%;
+                        margin-left: 100%;
+                         &::before
+                            {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            background: transparent;
+                            top: -10px;
+                            left: 38%;
+                            box-shadow: 4px 4px 7px  #9bb6be;
+                            width: 3px;
+                            height: 10px;
+                            transform: rotate(-45deg);
+                            }
+                         &::after
+                            {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: -10px;
+                                left: 34%;
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 20px 20px 20px 0px;
+                                border-color: $white transparent transparent transparent;
+                                transform: rotate(45deg);
+                            }
+
+                    }
+                    .ess_writing_content3
+                    {
+                        display: flex;
+                        width: 400%;
+                        margin-right: 100%;
+                        &::before
+                            {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            background: transparent;
+                            top: -10px;
+                            left: 63%;
+                            box-shadow: 4px 4px 7px  #9bb6be;
+                            width: 3px;
+                            height: 10px;
+                            transform: rotate(-45deg);
+                            }
+                         &::after
+                            {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: -10px;
+                                left: 59%;
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 20px 20px 20px 0px;
+                                border-color: $white transparent transparent transparent;
+                                transform: rotate(45deg);
+                            }
+                    }
+                    .ess_writing_content4
+                    {
+                        display: flex;
+                        width: 400%;
+                        margin-right: 300%;
+                        &::before
+                            {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            background: transparent;
+                            top: -10px;
+                            left: 88%;
+                            box-shadow: 4px 4px 7px  #9bb6be;
+                            width: 3px;
+                            height: 10px;
+                            transform: rotate(-45deg);
+                            }
+                         &::after
+                            {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: -10px;
+                                left: 84%;
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 20px 20px 20px 0px;
+                                border-color: $white transparent transparent transparent;
+                                transform: rotate(45deg);
+                            }
+                    }
+                    
             }
         }
-    }   
+        
+    }       
 }
 
