@@ -1,21 +1,103 @@
 @import "_mixin";
+@import "_colors";
 .get_prise
 {
-    background: $bg_color2;
+    background:url(/svg/Svg/Bg1.svg)no-repeat 44% 66%/142% 100% ,
+    $bg_color2;
 }
 
-.spare
+.h2_arrow
 {
-    width: 100%;
+    padding-left: 1%;
+    
+}
+._arrow
+{
+    padding-left: 1%;
     position: relative;
-    &::before
+    height: 100%;
+    &::after
     {
-        height: 30px;
-        width: 30px;
+        content: '';
         position: absolute;
-        left:1%;
-        top:1%;
-        background: url(/svg/Svg/Arrow.svg)no-repeat 0 0/100% 100%;
+        top: 0;
+        left: -63px;
+        height: 100%;
+        width: 100%;
+        background: url(/svg/Svg/Arrow.svg) 0 0/100% 100% no-repeat;
         z-index: 1;
     }
+}
+
+.form_get_prise
+{
+    margin: 2% 0;
+    
+    width: 100%;
+    display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+      @include Smaler_then_600{
+      
+        margin: 5% 0;
+      }
+    .form_elements
+    {
+        width: 28%;  
+        margin: 0.3% 0;
+        @include Smaler_then_600{
+       width: 100%;
+        margin: 1% 0;
+        }
+
+        label
+        {
+            color: $white;
+            font-family: $font-regular;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        select
+        {
+            width: 100%;
+            background: $bg_color5_forms;
+            height: 2rem;
+        }
+        .total_praise
+        {
+            color: $white;
+            font-family: $font-regular;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        ._praise
+        {
+            color: $white;
+            font-family: $font-regular;
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+    }
+}
+.fifteet_percent_off_dsp1 
+{
+    display: block;
+        @include Smaler_then_600
+        {
+        display: none;
+        }
+}
+.ballon_get_p
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0; 
+    margin-top: 2%; 
+    width: 100%;
+       @include Smaler_then_600
+        {
+        justify-content: center;
+        }
+
 }
