@@ -350,7 +350,7 @@ margin: 0;padding: 0;
     position: fixed;
     top: 30%;
     right: 5%;
-    z-index: 1;
+    z-index: 4;
     display: none;
      @include  Smaler_then_600
     {
@@ -365,7 +365,8 @@ margin: 0;padding: 0;
         background: #1a7fcf;
         margin-bottom: 4px;
         &:hover{
-        background: #003056; 
+        background: #003056;
+        z-index: 2; 
         }
         ._mobile_header_elements_login{
             height: 100%;
