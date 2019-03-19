@@ -1,0 +1,178 @@
+.how_it_works_fluid
+{
+    background: $bg_color_body_index;
+    padding: 3% 0;
+}
+
+.ballon_how_it_works
+{
+    width: 100%;
+}
+
+.hiw_row
+{ display: flex;
+    position: relative;
+}
+
+
+.titles_hiw
+{
+    width: 60%;
+    height: 75px;
+    display: flex;
+    border-bottom: 2px solid $color1;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    @include Smaler_then_600
+    {
+        width: 100%;
+        height: 100%
+    }
+
+
+
+
+  .titles_hiw_number
+  {
+      color: $color1;
+    font-family: $font-rajdhani-bold;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    margin:0 2%;
+  } 
+  h4
+  {
+      color: $bg_color1;
+      padding: 2% 0;
+  }
+  h3
+  {
+      color: $white;
+      display: none;
+      padding: 2% 0;
+  }
+  .titles_hiw_hower_rectangle
+  {
+    display: none;
+  }
+  &:hover
+  {
+      background:   $bg_color2;
+      align-self: flex-start;
+      h4{
+        display: none;
+      }
+      h3{
+        display: block;
+      }
+      .titles_hiw_hower_rectangle
+      {
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        // width: 0%;
+        // height: 0%;
+        border-style: solid;
+        border-width: 37px 37px 37px 37px;
+        border-color: $bg_color2 transparent transparent transparent;
+          transform: rotate(-90deg);
+         @include Smaler_then_600
+        {
+           display: block;
+        position: absolute;
+        top: 100%;
+        left: 48%;
+        // width: 0%;
+        // height: 0%;
+        border-style: solid;
+        border-width: 15px 15px 15px 15px;
+        border-color: $bg_color2 transparent transparent transparent;
+          transform: rotate(0deg);
+         @include Smaler_then_600
+        }
+        }
+        +.contents_him
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+      
+
+  }
+
+}
+
+.contents_him
+{
+  
+    @include Biger_then_600
+    {
+        position: absolute;
+        top: 0;
+        left: 60%;
+        width: 40%;
+        display: none;
+        padding: 5%;
+        background: $white;
+         box-shadow: 4px 4px 7px  #9bb6be;
+      }
+
+      @include Smaler_then_600
+    {
+
+        width: 100%;
+        display: none;
+        padding: 5%;
+         background: $white;
+         box-shadow: 4px 4px 7px  #9bb6be;
+    }
+
+    .contents_him_text
+    {
+        color: $black;
+        font-family: "Arial Narrow";
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .contents_him_icon {
+      background: $color1;
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+    }
+    .content_him_icon1
+      {
+        background: url(../svg/Svg/Works1.svg)no-repeat 0 0/100% 100% 
+
+      }
+    .content_him_icon2
+      {
+        background: url(../svg/Svg/Works2.svg)no-repeat 0 0/100% 100% 
+
+      }
+      .content_him_icon3
+      {
+        background: url(../svg/Svg/Works3.svg)no-repeat 0 0/100% 100% 
+
+      }
+      .content_him_icon4
+      {
+        background: url(../svg/Svg/Works4.svg)no-repeat 0 0/100% 100% 
+
+      }
+      .content_him_icon5
+      {
+        background: url(../svg/Svg/Works5.svg)no-repeat 0 0/100% 100% 
+
+      }
+      .content_him_icon6
+      {
+        background: url(../svg/Svg/Works6.svg)no-repeat 0 0/100% 100% 
+
+      }
+}

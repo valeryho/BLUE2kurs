@@ -8,7 +8,7 @@
 {
     
     padding-top: 2%;
-    background: url('/svg/Svg/Bg1.svg')no-repeat 0 0/100%  ,
+    background: url(../svg/Svg/Bg1.svg)no-repeat 0 0/100%  ,
     $bg_color_body_index;
 }
 .ess_writing1
@@ -104,22 +104,22 @@ text-align: justify;
         .ess_writings_element1
         {
             
-            background: url(/svg/Svg/Element1.svg)no-repeat/cover;
+            background: url(../svg/Svg/Element1.svg)no-repeat/cover;
         }
         .ess_writings_element2
         {
             
-            background: url(/svg/Svg/Element2.svg)no-repeat/cover;
+            background: url(../svg/Svg/Element2.svg)no-repeat/cover;
         }
         .ess_writings_element3
         {
            
-            background: url(/svg/Svg/Element3.svg)no-repeat/cover;
+            background: url(../svg/Svg/Element3.svg)no-repeat/cover;
         }
         .ess_writings_element4
         {
              
-            background: url(/svg/Svg/Element4.svg)no-repeat/cover;
+            background: url(../svg/Svg/Element4.svg)no-repeat/cover;
         }
        
         &:hover{
@@ -159,48 +159,48 @@ text-align: justify;
                 
                     .ess_writings_element1
                     {            
-                        background: url(/svg/Svg/Element1_dark.svg)no-repeat/cover;
+                        background: url(../svg/Svg/Element1_dark.svg)no-repeat/cover;
                     
                     
                     }
                     .ess_writings_element2
                     {
                         
-                        background: url(/svg/Svg/Element2_dark.svg)no-repeat/cover;
+                        background: url(../svg/Svg/Element2_dark.svg)no-repeat/cover;
                     }
                     .ess_writings_element3
                     {
                         
-                        background: url(/svg/Svg/Element3_dark.svg)no-repeat/cover;
+                        background: url(../svg/Svg/Element3_dark.svg)no-repeat/cover;
                     }
                     .ess_writings_element4
                     {
                         
-                        background: url(/svg/Svg/Element4_dark.svg)no-repeat/cover;
+                        background: url(../svg/Svg/Element4_dark.svg)no-repeat/cover;
                     }
                 }
             @include Smaler_then_600
             {
                     .ess_writings_element1
                     {            
-                        background: url(/svg/Svg/Element1_dark.svg)no-repeat/cover;
+                        background: url(../svg/Svg/Element1_dark.svg)no-repeat/cover;
                     
                     
                     }
                     .ess_writings_element2
                     {
                         
-                        background: url(/svg/Svg/Element2_dark.svg)no-repeat/cover;
+                        background: url(../svg/Svg/Element2_dark.svg)no-repeat/cover;
                     }
                     .ess_writings_element3
                     {
                         
-                        background: url(/svg/Svg/Element3_dark.svg)no-repeat/cover;
+                        background: url(../svg/Svg/Element3_dark.svg)no-repeat/cover;
                     }
                     .ess_writings_element4
                     {
                         
-                        background: url(/svg/Svg/Element4_dark.svg)no-repeat/cover;
+                        background: url(../svg/Svg/Element4_dark.svg)no-repeat/cover;
                     }
                     .ess_writing_contents
                     {

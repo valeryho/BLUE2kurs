@@ -6,11 +6,11 @@
     margin-top: 7px;
    
 
-   background: url(/svg/Layer_11.png) 72% 8%/auto 100% no-repeat,url(/svg/Layer_12.png) 0 0/auto 94% no-repeat;
+   background: url('../svg/Layer_11.png') 72% 8%/auto 100% no-repeat,url(../svg/Layer_12.png) 0 0/auto 94% no-repeat;
     padding-top: 2%;
     @include  Smaler_then_600
         {
-           background: url(/svg/Svg/Bg1.svg) 0% 0%/auto 30% no-repeat;
+           background: url(../svg/Svg/Bg1.svg) 0% 0%/auto 30% no-repeat;
              padding-top:0;
         }
 }
@@ -18,7 +18,7 @@
 .logo
 {
     height: 5.125rem;
-    background: url(/svg/Logo.svg) 0 0/100% 100% no-repeat;
+    background: url(../svg/Logo.svg) 0 0/100% 100% no-repeat;
     @include  Smaler_then_600
         {
         display: none;

@@ -17,34 +17,34 @@
     }
     ._psvisa{
         width: 10%;
-        background: url('/svg/Payment_systems/visa.svg')no-repeat 0 0/70% 100%;
+        background: url('../svg/Payment_systems/visa.svg')no-repeat 0 0/70% 100%;
     }
     ._psmaster{
         
         width: 10%;
-        background: url('/svg/Payment_systems/master_card.svg')no-repeat 0 0/70% 100%;
+        background: url('../svg/Payment_systems/master_card.svg')no-repeat 0 0/70% 100%;
     
     }
     ._psamexpress{
     
         width: 10%;
-        background: url('/svg/Payment_systems/american_express.svg')no-repeat 0 0/70% 100%;
+        background: url('../svg/Payment_systems/american_express.svg')no-repeat 0 0/70% 100%;
     }
     ._psdiscover{
         width: 10%;
-        background: url('/svg/Payment_systems/discover.svg')no-repeat 0 0/70% 100%;
+        background: url('../svg/Payment_systems/discover.svg')no-repeat 0 0/70% 100%;
     }
     ._psjcb{
         width: 10%;
-        background: url('/svg/Payment_systems/jcb.svg')no-repeat 0 0/70% 100%;
+        background: url('../svg/Payment_systems/jcb.svg')no-repeat 0 0/70% 100%;
     }
     ._psdclub{
         width: 10%;
-        background: url('/svg/Payment_systems/diners-club.svg')no-repeat 0 0/70% 100%;
+        background: url('../svg/Payment_systems/diners-club.svg')no-repeat 0 0/70% 100%;
     }
     ._psddebt{
         width: 10%;
-        background: url('/svg/Payment_systems/paypal.svg')no-repeat 0 0/70% 100%;
+        background: url('../svg/Payment_systems/paypal.svg')no-repeat 0 0/70% 100%;
     }
 }
 
@@ -65,28 +65,28 @@
     }
     .fb{
         align-self: center;
-        background: url("/svg/Svg/Facebook.svg")no-repeat 0 0/70% 100%;
+        background: url("../svg/Svg/Facebook.svg")no-repeat 0 0/70% 100%;
         &:hover{
-            background: url("/svg/Svg/Facebook2.svg")no-repeat 0 0/70% 100%;
+            background: url("../svg/Svg/Facebook2.svg")no-repeat 0 0/70% 100%;
         }
     }
     .twiter{
         align-self: center;
-        background: url("/svg/Svg/Twiter.svg")no-repeat 0 0/70% 100%;
+        background: url("../svg/Svg/Twiter.svg")no-repeat 0 0/70% 100%;
         &:hover{
-            background: url("/svg/Svg/Twiter2.svg")no-repeat 0 0/70% 100%;
+            background: url("../svg/Svg/Twiter2.svg")no-repeat 0 0/70% 100%;
         }
     }
     .pinterest{
         align-self: center;
-        background: url("/svg/Svg/Pinterest.svg")no-repeat 0 0/70% 100%;
+        background: url("../svg/Svg/Pinterest.svg")no-repeat 0 0/70% 100%;
         &:hover{
-            background: url("/svg/Svg/Pinterest2.svg")no-repeat 0 0/70% 100%;
+            background: url("../svg/Svg/Pinterest2.svg")no-repeat 0 0/70% 100%;
         }
     }
 }
  .site_map{
-     background: url("/svg/Svg/Bg_Dark2.svg")no-repeat 30% 21%/auto 110% ;
+     background: url("../svg/Svg/Bg_Dark2.svg")no-repeat 30% 21%/auto 110% ;
      .site_map_a{
          display: block;
          color:$white;

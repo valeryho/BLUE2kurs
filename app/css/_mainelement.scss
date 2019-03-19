@@ -60,12 +60,18 @@ text-transform: uppercase;
  {
      color: $black;
  }
+ @include Smaler_then_600{
+      font-size: 1.25rem;
+    }
 }
 h4{
 color:$font-color1;
 font-family: $font-medium;
 font-size: 1.12rem;
 text-transform: uppercase;
+@include Smaler_then_600{
+      font-size: 1rem;
+    }
 }
 .text
 {

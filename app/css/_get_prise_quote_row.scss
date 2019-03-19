@@ -2,7 +2,7 @@
 @import "_colors";
 .get_prise
 {
-    background:url(/svg/Svg/Bg2.svg)no-repeat 0 0/cover,
+    background:url(../svg/Svg/Bg2.svg)no-repeat 0 0/cover,
     $bg_color2;
 }
 
@@ -24,7 +24,7 @@
         left: -63px;
         height: 100%;
         width: 100%;
-        background: url(/svg/Svg/Arrow.svg) 0 0/100% 100% no-repeat;
+        background: url(../svg/Svg/Arrow.svg) 0 0/100% 100% no-repeat;
         z-index: 1;
     }
 }

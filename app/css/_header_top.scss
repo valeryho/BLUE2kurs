@@ -17,7 +17,7 @@ padding: 0;
 color: $color1;
 font-size: 1rem;
 height: 5rem;
-background: url(/svg/Svg/Bg_Dark2.svg) 0 0/auto 50% repeat-x;
+background: url(../svg/Svg/Bg_Dark2.svg) 0 0/auto 50% repeat-x;
 margin: 0;padding: 0;
  @include  Smaler_then_1200
     {
@@ -27,7 +27,7 @@ margin: 0;padding: 0;
  @include  Smaler_then_600
     {
     height: 8rem;
-    background: url(/svg/Svg/Bg_Dark2.svg) -100px 0/auto 50% no-repeat;
+    background: url(../svg/Svg/Bg_Dark2.svg) -100px 0/auto 50% no-repeat;
     
     }
 }   
@@ -37,14 +37,14 @@ margin: 0;padding: 0;
     display: none;
     height: 50%;
     width: 70%;
-    background: url(/svg/Logo_mobile_2.svg) 0 0/100% 100% no-repeat;
+    background: url(../svg/Logo_mobile_2.svg) 0 0/100% 100% no-repeat;
      @include  Smaler_then_600
     {
         display: flex;
     }
     &:hover
     {
-         background: url(/svg/Logo_mobile_1.svg) 0 0/100% 100% no-repeat;
+         background: url(../svg/Logo_mobile_1.svg) 0 0/100% 100% no-repeat;
     }
 
 }
@@ -370,19 +370,19 @@ margin: 0;padding: 0;
         ._mobile_header_elements_login{
             height: 100%;
             width: 100%;
-            background: url("/svg/Svg/Login.svg") no-repeat 0 0/90% 100%;
+            background: url(../svg/Svg/Login.svg) no-repeat 0 0/90% 100%;
             &:hover{
-            background: url("/svg/Svg/Login2.svg") no-repeat 0 0/90% 100%;  
+            background: url(../svg/Svg/Login2.svg) no-repeat 0 0/90% 100%;  
             }
         }
         ._mobile_header_elements_chat
         {
             height: 100%;
             width: 100%;
-            background: url("/svg/Svg/Chat.svg") no-repeat 0 0/90% 100%;
+            background: url(../svg/Svg/Chat.svg) no-repeat 0 0/90% 100%;
             &:hover
             {
-            background: url("/svg/Svg/Chat2.svg") no-repeat 0 0/90% 100%;  
+            background: url(../svg/Svg/Chat2.svg) no-repeat 0 0/90% 100%;  
             }
         
         }
