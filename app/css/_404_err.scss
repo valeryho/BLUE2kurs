@@ -1,0 +1,68 @@
+@import "_fonts";
+@import "_colors";
+@import "_mixin";
+
+.bg_404
+{
+    background: url(../svg/Svg/Bg1.svg)no-repeat 0px -250px,
+                url(../svg/Svg/Bg1.svg)no-repeat 0px 120%,
+                url(../svg/Vector_S.svg)no-repeat 75% -5%,
+                url(../svg/Vector_Smart_bject.svg)no-repeat 32% 73%,
+                $bg_color6_head_foot;
+
+}
+
+.logo_404{
+    margin-top:3%;
+background: url(../svg/Logo4.svg)no-repeat 0 0/100% 100% ;
+
+height: 5.125rem;
+    width: 50%;
+    margin-bottom: 4%;
+}
+.grats1
+{
+  
+    margin-left:8%;
+    color: $font_color2;
+font-family: $font-regular;
+font-size: 3.75rem;
+
+
+}
+.grats2
+{
+color: $font_color2;
+font-family: $font-thin;
+font-size: 3rem;
+
+}
+
+._404_txt
+{
+
+    margin-left: 50%;
+text-shadow: 3px 3px 0 $font-color1,
+               3px -3px 0 $font-color1,
+               -3px 3px 0 $font-color1,
+              -3px -3px 0 $font-color1;
+               
+
+color:$bg_color6_head_foot;
+font-family: $font-bold;
+font-size: 21.875rem;
+}
+.row_404
+{
+    flex-direction: column;
+}
+.btns_404
+{
+    width: 50%;
+    margin-left: 50%;
+    .btn_404
+    {
+        margin: 10%;
+
+    }
+}

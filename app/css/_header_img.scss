@@ -14,6 +14,13 @@
              padding-top:0;
         }
 }
+.bg_img_1_1
+{
+    @include  Smaler_then_600
+        {
+        display: none;
+        }
+}
 
 .logo
 {

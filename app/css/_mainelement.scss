@@ -6,6 +6,10 @@
     margin: 0;
     padding: 0;
 }
+i
+{
+    font-style: normal;
+}
 
 ul
 {
@@ -78,6 +82,19 @@ text-transform: uppercase;
 color:$black;
 font-family: 'Arial Narrow', Arial, sans-serif;
 font-size: 1.12rem;
+text-align: justify;
+padding: 0 1%;
+// text-transform: uppercase;
+} 
+.text_up
+{
+margin-top: 1rem;
+color:$bg_color1;
+
+font-family: 'Arial Narrow', Arial, sans-serif;
+font-size: 1.42rem;
+text-align: justify;
+padding: 0 1%;
 // text-transform: uppercase;
 }
 .ballon
@@ -114,6 +131,80 @@ font-size: 1.12rem;
         border-style: solid;
         border-width: 16px 19px 0 0;
         border-color: #caddea transparent transparent transparent;
+    }
+ }
+
+ .ballon_blue
+{
+  
+    box-shadow: 2px 4px 7px rgba(155, 182, 190, 0.55);
+    background-color: $font-color1;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    display: block;
+    &::before
+    {
+    content: '';
+    display: block;
+    position: absolute;
+    background: transparent;
+    left: 10px;
+    bottom: -12px;
+    box-shadow: 4px 4px 7px #9bb6be;
+    width: 3px;
+    height: 17px;
+    transform: rotate(50deg);
+    }
+    &::after
+    {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 16px 19px 0 0;
+        border-color:$font-color1 transparent transparent transparent;
+    }
+ }
+
+  .ballon_white
+{
+  
+    box-shadow: 2px 4px 7px rgba(155, 182, 190, 0.55);
+    background-color: $white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    display: block;
+    &::before
+    {
+    content: '';
+    display: block;
+    position: absolute;
+    background: transparent;
+    left: 10px;
+    bottom: -12px;
+    box-shadow: 4px 4px 7px #9bb6be;
+    width: 3px;
+    height: 17px;
+    transform: rotate(50deg);
+    }
+    &::after
+    {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 16px 19px 0 0;
+        border-color:$white transparent transparent transparent;
     }
  }
 
@@ -162,6 +253,7 @@ font-size: 1.12rem;
         }
     }   
  }
+
 
 
  .fifteet_percent_off
@@ -215,3 +307,37 @@ font-size: 1.12rem;
    }
    
 }
+.social_icon
+    {
+        width: 10%;
+        height: 60%;
+        margin-left: 5%;
+    }
+    .fb{
+        align-self: center;
+        height: 2rem;
+        width: 2rem;
+        background: url("../svg/Svg/Facebook.svg")no-repeat 0 0/100% 100%;
+        &:hover{
+            background: url("../svg/Svg/Facebook2.svg")no-repeat 0 0/100% 100%;
+        }
+    }
+    .twiter{
+        align-self: center;
+         height: 2rem;
+        width: 2rem;
+        background: url("../svg/Svg/Twiter.svg")no-repeat 0 0/100% 100%;
+        &:hover{
+            background: url("../svg/Svg/Twiter2.svg")no-repeat 0 0/100% 100%;
+        }
+    }
+    .pinterest{
+        align-self: center;
+         height: 2rem;
+        width: 2rem;
+        background: url("../svg/Svg/Pinterest.svg")no-repeat 0 0/100% 100%;
+        &:hover{
+            background: url("../svg/Svg/Pinterest2.svg")no-repeat 0 0/100% 100%;
+        }
+    }
+

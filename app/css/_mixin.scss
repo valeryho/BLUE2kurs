@@ -8,6 +8,11 @@
         @content;
     }
 }
+@mixin Smaler_then_990{
+    @media screen and (max-width:990px){
+        @content;
+    }
+}
 @mixin Smaler_then_1200{
     @media screen and (max-width:1200px){
         @content;
@@ -15,6 +20,11 @@
 }
 @mixin Smaler_then_600{
     @media screen and (max-width:600px){
+        @content;
+    }
+}
+@mixin Smaler_then_768{
+    @media screen and (max-width:768px){
         @content;
     }
 }

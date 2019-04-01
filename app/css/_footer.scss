@@ -57,33 +57,7 @@
        width: 100%;
        height: 3rem;
     }
-    .social_icon
-    {
-        width: 10%;
-        height: 60%;
-        margin-left: 5%;
-    }
-    .fb{
-        align-self: center;
-        background: url("../svg/Svg/Facebook.svg")no-repeat 0 0/70% 100%;
-        &:hover{
-            background: url("../svg/Svg/Facebook2.svg")no-repeat 0 0/70% 100%;
-        }
-    }
-    .twiter{
-        align-self: center;
-        background: url("../svg/Svg/Twiter.svg")no-repeat 0 0/70% 100%;
-        &:hover{
-            background: url("../svg/Svg/Twiter2.svg")no-repeat 0 0/70% 100%;
-        }
-    }
-    .pinterest{
-        align-self: center;
-        background: url("../svg/Svg/Pinterest.svg")no-repeat 0 0/70% 100%;
-        &:hover{
-            background: url("../svg/Svg/Pinterest2.svg")no-repeat 0 0/70% 100%;
-        }
-    }
+    
 }
  .site_map{
      background: url("../svg/Svg/Bg_Dark2.svg")no-repeat 30% 21%/auto 110% ;
