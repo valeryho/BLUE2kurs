@@ -288,7 +288,7 @@ margin: 0;padding: 0;
         display: none;
         &:checked
         {
-            ~ ._nav_burger
+            ~._nav_burger
             {
                .first{
                     display: none;
