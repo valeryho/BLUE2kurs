@@ -8,6 +8,7 @@
         @content;
     }
 }
+
 @mixin Smaler_then_990{
     @media screen and (max-width:990px){
         @content;
@@ -35,6 +36,7 @@
         @content;
     }
 }
+
 
 @mixin Smaler_then_1440{
     @media screen and (max-width:1440px){
