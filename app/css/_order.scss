@@ -319,8 +319,9 @@ justify-content: center;
         .Welcome_User_Test_naw_elements
         {border-right:2px 
             solid $bg_color2 ;
-         padding: 0 2%;
+            padding: 0 2%;
            font-size: 0.9rem;
+           white-space: nowrap;
            flex-grow: 1;
             @include Smaler_then_600{
             width: 100%;
@@ -518,3 +519,69 @@ padding: 2%;
   }
 
 }
+
+.mpocp
+{
+    display: flex;
+}
+.mpocp_cell
+{
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+     width: 33.0%;
+    background: $white;
+    border: 1px solid #caddea;
+    padding: 1% 0;
+}
+
+.title_order_list_table{
+    width: 100%;
+    text-align: left;
+    color: white;
+    margin: 1px;
+    background: $bg_color1;
+    padding-left: 1%;
+    margin-top: 1%;
+
+}
+
+.mpocp_head{
+    color: #013056;
+    font-family: "Arial Narrow";
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.mpocp_txt{
+    color: #013056;
+    font-family: "Arial Narrow";
+    font-size: 20px;
+    font-weight: 400;
+}
+ .mpocp_icon_a{
+     color: #1b7fd0;
+     display: inline;
+     font-family: "Arial Narrow";
+     font-size: 1.5rem;
+     text-transform: uppercase;
+    
+     &:hover
+     {
+         color: #013056;
+     }
+ }
+.mpocp_icon_a_delete{
+    color: $bg_color4_btn_ordernow;
+    font-family: "Arial Narrow";
+    font-size: 20px;
+    font-weight: 700;
+    &:hover
+    {
+        color: $bgcolor4_btn_ordernow_hover;
+    }
+}
+
